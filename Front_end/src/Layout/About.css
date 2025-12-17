@@ -1,0 +1,48 @@
+.about-page {
+  padding: 60px 20px;
+  background: #f9f9fb;
+  min-height: calc(100vh - 80px);
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.about-container h1 {
+  margin-bottom: 12px;
+  font-size: 32px;
+}
+
+.about-intro {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.about-section {
+  margin-bottom: 28px;
+}
+
+.about-section h2 {
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.about-section p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  margin-left: 20px;
+  color: #555;
+}
+
+.about-section li {
+  margin-bottom: 6px;
+}

@@ -1,0 +1,53 @@
+.generate-schedule-page {
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.control-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  min-height: 500px;
+}
+
+.step-content {
+  min-height: 300px;
+}
+
+.action-buttons {
+  margin-top: 24px;
+}
+
+.semester-selector {
+  margin-bottom: 24px;
+}
+
+.help-tips {
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.help-tips ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+
+.help-tips li {
+  margin-bottom: 4px;
+  color: #666;
+}
+
+@media (max-width: 992px) {
+  .generate-schedule-page {
+    padding: 16px;
+  }
+  
+  .ant-col {
+    margin-bottom: 24px;
+  }
+}

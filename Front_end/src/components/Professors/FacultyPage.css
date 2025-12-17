@@ -1,0 +1,420 @@
+/* FacultyPage.css */
+.faculty-page {
+    padding: 24px;
+    background: #f5f7fa;
+    min-height: 100vh;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f0f0f0;
+}
+
+.page-header div:first-child {
+    flex: 1;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-header p {
+    margin: 8px 0 0 0;
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.page-header .ant-btn {
+    height: 40px;
+    padding: 0 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-header .ant-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.page-header .ant-btn:active {
+    transform: translateY(0);
+}
+
+.faculty-content {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f0f0f0;
+}
+
+/* Table Styles */
+.faculty-content .ant-table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faculty-content .ant-table-thead > tr > th {
+    background: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e2e8f0;
+    padding: 16px;
+}
+
+.faculty-content .ant-table-tbody > tr > td {
+    padding: 16px;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background-color 0.2s ease;
+}
+
+.faculty-content .ant-table-tbody > tr:hover > td {
+    background: #f8fafc;
+}
+
+/* Professor Cell Styles */
+.faculty-content .ant-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+}
+
+/* Specialization Tags */
+.faculty-content .ant-tag {
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin: 2px;
+    border: none;
+    background: #e0e7ff;
+    color: #4f46e5;
+    transition: all 0.2s ease;
+}
+
+.faculty-content .ant-tag:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+}
+
+/* Status Tags */
+.faculty-content .ant-tag[color="green"] {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.faculty-content .ant-tag[color="red"] {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* Action Buttons */
+.faculty-content .ant-btn-text {
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.faculty-content .ant-btn-text:not(.ant-btn-dangerous) {
+    color: #64748b;
+}
+
+.faculty-content .ant-btn-text:not(.ant-btn-dangerous):hover {
+    color: #4f46e5;
+    background: #e0e7ff;
+}
+
+.faculty-content .ant-btn-text.ant-btn-dangerous {
+    color: #ef4444;
+}
+
+.faculty-content .ant-btn-text.ant-btn-dangerous:hover {
+    color: #dc2626;
+    background: #fee2e2;
+}
+
+/* Pagination Styles */
+.faculty-content .ant-pagination {
+    margin-top: 24px;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.faculty-content .ant-pagination-item {
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    margin: 0 4px;
+}
+
+.faculty-content .ant-pagination-item a {
+    color: #475569;
+}
+
+.faculty-content .ant-pagination-item:hover {
+    border-color: #4f46e5;
+}
+
+.faculty-content .ant-pagination-item:hover a {
+    color: #4f46e5;
+}
+
+.faculty-content .ant-pagination-item-active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: transparent;
+}
+
+.faculty-content .ant-pagination-item-active a {
+    color: white;
+}
+
+.faculty-content .ant-pagination-prev .ant-pagination-item-link,
+.faculty-content .ant-pagination-next .ant-pagination-item-link {
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+.faculty-content .ant-pagination-prev:hover .ant-pagination-item-link,
+.faculty-content .ant-pagination-next:hover .ant-pagination-item-link {
+    border-color: #4f46e5;
+    color: #4f46e5;
+}
+
+.faculty-content .ant-pagination-options {
+    margin-left: 16px;
+}
+
+.faculty-content .ant-select-selector {
+    border-radius: 6px !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* Loading State */
+.faculty-content .ant-spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Empty State */
+.faculty-content .ant-empty {
+    padding: 48px 0;
+}
+
+.faculty-content .ant-empty-description {
+    color: #6b7280;
+    margin-top: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .faculty-page {
+        padding: 16px;
+    }
+    
+    .page-header {
+        padding: 20px;
+        margin-bottom: 24px;
+    }
+    
+    .faculty-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px;
+    }
+    
+    .page-header .ant-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .faculty-page {
+        padding: 12px;
+    }
+    
+    .faculty-content {
+        padding: 16px;
+    }
+    
+    .faculty-content .ant-table-thead > tr > th,
+    .faculty-content .ant-table-tbody > tr > td {
+        padding: 12px;
+    }
+    
+    .faculty-content .ant-pagination {
+        padding: 12px;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .faculty-content .ant-space {
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .faculty-content .ant-btn-text {
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 22px;
+    }
+    
+    .page-header p {
+        font-size: 13px;
+    }
+    
+    .faculty-content .ant-table {
+        font-size: 13px;
+    }
+    
+    .faculty-content .ant-tag {
+        font-size: 11px;
+        padding: 1px 6px;
+    }
+}
+
+/* Animation for table rows */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faculty-content .ant-table-tbody > tr {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.faculty-content .ant-table-tbody > tr:nth-child(1) { animation-delay: 0.05s; }
+.faculty-content .ant-table-tbody > tr:nth-child(2) { animation-delay: 0.1s; }
+.faculty-content .ant-table-tbody > tr:nth-child(3) { animation-delay: 0.15s; }
+.faculty-content .ant-table-tbody > tr:nth-child(4) { animation-delay: 0.2s; }
+.faculty-content .ant-table-tbody > tr:nth-child(5) { animation-delay: 0.25s; }
+.faculty-content .ant-table-tbody > tr:nth-child(6) { animation-delay: 0.3s; }
+.faculty-content .ant-table-tbody > tr:nth-child(7) { animation-delay: 0.35s; }
+.faculty-content .ant-table-tbody > tr:nth-child(8) { animation-delay: 0.4s; }
+.faculty-content .ant-table-tbody > tr:nth-child(9) { animation-delay: 0.45s; }
+.faculty-content .ant-table-tbody > tr:nth-child(10) { animation-delay: 0.5s; }
+
+/* Scrollbar styling for table */
+.faculty-content .ant-table-body {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.faculty-content .ant-table-body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.faculty-content .ant-table-body::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+}
+
+.faculty-content .ant-table-body::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+
+.faculty-content .ant-table-body::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Hover effects for clickable cells */
+.faculty-content .ant-table-row {
+    cursor: pointer;
+}
+
+.faculty-content .ant-table-row:hover {
+    background: #f8fafc;
+}
+
+/* Status indicator dots */
+.status-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.status-indicator.available {
+    background-color: #10b981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+.status-indicator.unavailable {
+    background-color: #ef4444;
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+/* Enhanced office display */
+.office-display {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+.office-display::before {
+    content: "🏢";
+    font-size: 14px;
+}
+
+/* Actions container */
+.actions-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.actions-container .ant-btn {
+    transition: all 0.2s ease;
+}
+
+.actions-container .ant-btn:hover {
+    transform: scale(1.1);
+}

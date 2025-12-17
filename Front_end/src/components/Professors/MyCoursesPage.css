@@ -1,0 +1,38 @@
+.my-courses-page {
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #1f2937;
+}
+
+.page-header p {
+  margin: 4px 0 0 0;
+  color: #6b7280;
+}
+
+.course-info {
+  display: flex;
+  align-items: center;
+}
+
+.course-actions {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .my-courses-page {
+    padding: 16px;
+  }
+  
+  .course-actions {
+    flex-direction: column;
+  }
+}

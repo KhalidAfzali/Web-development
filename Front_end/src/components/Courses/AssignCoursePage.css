@@ -1,0 +1,155 @@
+.assign-course-page {
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page-header h1 {
+  text-align: center;
+  margin: 0;
+  color: #1f2937;
+  font-size: 28px;
+}
+
+.page-header p {
+  text-align: center;
+  margin: 8px 0 0 0;
+  color: #6b7280;
+}
+
+.assign-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1200px) {
+  .assign-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.assign-form-card, .professors-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.assign-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.professor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.professor-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.professor-email {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.load-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.load-text {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.load-bar {
+  height: 6px;
+  background: #f3f4f6;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.load-progress {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.selected-row {
+  background-color: #f0f9ff !important;
+}
+
+.course-info-section {
+  margin-top: 24px;
+}
+
+.course-details {
+  padding: 16px;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.course-header h3 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.course-meta {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+  color: #6b7280;
+}
+
+.course-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.course-description {
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .assign-course-page {
+    padding: 16px;
+  }
+  
+  .back-button {
+    position: relative;
+    margin-bottom: 16px;
+    transform: none;
+  }
+  
+  .page-header h1,
+  .page-header p {
+    text-align: left;
+  }
+  
+  .course-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

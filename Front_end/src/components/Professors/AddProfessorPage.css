@@ -1,0 +1,129 @@
+.add-professor-page {
+  padding: 20px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page-header h1 {
+  color: #1890ff;
+  margin-bottom: 8px;
+  font-size: 2.5rem;
+}
+
+.page-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.form-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.form-steps {
+  margin-bottom: 30px;
+}
+
+.form-step {
+  padding: 20px 0;
+}
+
+.form-step h3 {
+  color: #1890ff;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.professor-form .ant-form-item-label > label {
+  font-weight: 600;
+  color: #333;
+}
+
+.review-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #1890ff;
+}
+
+.review-section h4 {
+  color: #1890ff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 8px;
+}
+
+.review-section p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.review-section strong {
+  color: #333;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.form-actions .ant-btn {
+  min-width: 120px;
+  height: 40px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-professor-page {
+    padding: 10px;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .back-button {
+    position: relative;
+    margin-bottom: 15px;
+    transform: none;
+  }
+  
+  .form-card {
+    margin: 0 10px;
+  }
+}
+
+.ant-steps-item-process .ant-steps-item-icon {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon {
+  background: #52c41a;
+  border-color: #52c41a;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+  color: white;
+}

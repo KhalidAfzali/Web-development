@@ -1,0 +1,126 @@
+.add-classroom-page {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 16px 24px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.header-left,
+.header-right {
+  flex: 1;
+}
+
+.header-center {
+  flex: 2;
+  text-align: center;
+}
+
+.header-center h1 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.header-center p {
+  margin: 8px 0 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.back-button {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.form-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  background: white;
+  margin-bottom: 24px;
+}
+
+.form-steps {
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.step-content {
+  min-height: 300px;
+  padding: 20px 0;
+}
+
+.form-step {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.guidelines-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  background: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-classroom-page {
+    padding: 16px;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 20px 16px;
+  }
+  
+  .header-left,
+  .header-center,
+  .header-right {
+    width: 100%;
+  }
+  
+  .header-center h1 {
+    font-size: 24px;
+  }
+  
+  .form-card {
+    padding: 16px;
+  }
+  
+  .form-steps {
+    padding: 0 10px;
+  }
+  
+  .step-content {
+    min-height: 250px;
+  }
+}
